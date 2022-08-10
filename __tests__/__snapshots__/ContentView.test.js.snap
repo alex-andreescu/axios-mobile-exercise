@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryList snapshot 1`] = `
+<ForwardRef(SafeAreaView)
+  style={
+    Object {
+      "backgroundColor": "lightgray",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <ScrollView
+    style={
+      Object {
+        "paddingHorizontal": 20,
+      }
+    }
+  >
+    <Image
+      accessibilityLabel="google"
+      accessible={true}
+      source={
+        Object {
+          "uri": "www.google.com",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 300,
+          "width": 400,
+        }
+      }
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "fontWeight": "bold",
+          },
+          Object {
+            "marginTop": 10,
+          },
+        ]
+      }
+    >
+      Wed Dec 31 1969 - Technology
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontWeight": "bold",
+          },
+          Object {
+            "marginBottom": 20,
+            "marginTop": 10,
+          },
+        ]
+      }
+    >
+      Written by Alex Andreescu
+    </Text>
+  </ScrollView>
+</ForwardRef(SafeAreaView)>
+`;

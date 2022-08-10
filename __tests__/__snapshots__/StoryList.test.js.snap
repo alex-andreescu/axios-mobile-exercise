@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryList snapshot 1`] = `
+<ForwardRef(SafeAreaView)
+  style={
+    Object {
+      "backgroundColor": "lightgray",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <FlatList
+    ListEmptyComponent={
+      <Text>
+        No news stories returned
+      </Text>
+    }
+    data={
+      Array [
+        "1234",
+        "2345",
+        "3456",
+      ]
+    }
+    keyExtractor={[Function]}
+    renderItem={[Function]}
+  />
+</ForwardRef(SafeAreaView)>
+`;
+
+exports[`StoryListItem snapshot 1`] = `
+<Memo(Pressable)
+  onPress={[Function]}
+  style={[Function]}
+>
+  <Image
+    accessible={true}
+    source={
+      Object {
+        "uri": "www.google.com",
+      }
+    }
+    style={
+      Object {
+        "height": 105,
+        "width": 140,
+      }
+    }
+  />
+  <Text
+    allowFontScaling={true}
+    style={
+      Object {
+        "flex": 1,
+        "fontSize": 18,
+        "padding": 10,
+      }
+    }
+  >
+    a headline
+  </Text>
+</Memo(Pressable)>
+`;
