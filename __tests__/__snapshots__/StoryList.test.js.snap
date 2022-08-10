@@ -35,6 +35,7 @@ exports[`StoryListItem snapshot 1`] = `
   style={[Function]}
 >
   <Image
+    accessibilityLabel="google"
     accessible={true}
     source={
       Object {
@@ -52,6 +53,7 @@ exports[`StoryListItem snapshot 1`] = `
     allowFontScaling={true}
     style={
       Object {
+        "color": "black",
         "flex": 1,
         "fontSize": 18,
         "padding": 10,

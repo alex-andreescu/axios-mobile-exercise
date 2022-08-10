@@ -37,6 +37,7 @@ exports[`StoryList snapshot 1`] = `
       style={
         Array [
           Object {
+            "color": "black",
             "fontWeight": "bold",
           },
           Object {
@@ -51,6 +52,7 @@ exports[`StoryList snapshot 1`] = `
       style={
         Array [
           Object {
+            "color": "black",
             "fontWeight": "bold",
           },
           Object {

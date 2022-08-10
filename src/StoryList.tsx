@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 18,
     padding: 10,
+    color: 'black',
   },
   headerButton: {
     fontSize: 11,

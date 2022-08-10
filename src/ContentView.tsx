@@ -7,6 +7,7 @@ import { useContent } from './hooks';
 
 const styles = StyleSheet.create({
   bold: {
+    color: 'black',
     fontWeight: 'bold',
   },
   safeArea: {
@@ -57,7 +58,26 @@ export const ContentView = ({ route: { params: { uuid } } }: ContentViewProps) =
   const topics: Array<string> = (data?.['topics'] || []).map(({ name }) => name)
   const topicsText: string = topics?.join(', ')
   const publishedOn: Date = new Date(data?.['published_date'] || 0)
-  const blocks = getRNDraftJSBlocks({ contentState })
+  const blocks = getRNDraftJSBlocks({
+    contentState,
+    customStyles: StyleSheet.flatten({
+      paragraph: {
+        color: 'black',
+      },
+      'ordered-list-item': {
+        color: 'black',
+      },
+      'unordered-list-item': {
+        color: 'black',
+      },
+      'blockquote': {
+        color: 'black',
+      },
+      unstyled: {
+        color: 'black',
+      },
+    }),
+  })
 
   return (
     <SafeAreaView style={styles.safeArea}>

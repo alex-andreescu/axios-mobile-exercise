@@ -1,3 +1,36 @@
+# Personal Notes
+I made sure that this didn't take over the specified time limit
+
+To run this on an iOS simulator or iOS device:
+1. Run `npm install`
+2. Run `cd ios && pod install && cd ..`
+3. Run `react-native run-ios` or run it through xcode by opening up the .xcworkspace file
+
+To run this on an Android device:
+1. Run `npm install`
+2. Make sure your device is registered through `adb devices`
+3. Run `react-native run-android`
+
+## Things I couldn't get to or lacked the time for
+- I'm not too familiar with typescript so some of the time was spent doing realtime troubleshooting of errors
+- Jest tests are currently only snapshots. Ideally i'd want to test the pressables/touchables and other side effects
+
+## Things I did different than the instructions
+- I tweaked the layout and background color to be more friendly to my eyes
+- i didn't include the hamburger menu icon on the wireframe since there was no mention of a menu and i just opted not to mock a list of account options (this could be done in the future though)
+- I moved the back button and Axios website links to the header of the individual story view rather than the bottom of the page - this one is just my preference since both of those are going to be sticky to the top of the page
+
+## Things that I would improve on given more time and resources
+- I would've liked to add better styling to the draftjs blocks to make them look better, but I opted to just leave it as the default styles
+- Update jest test to not only include side effects but also empty/non-empty render examples for each applicable component or screen
+- Adding in state management to store previously visited stories via mobx or redux (up to a certain limit i.e. 40 stories)
+- expanding a bit on the above point, also adding in pagination via infinite scroll
+- Lazyloading for the images that are not currently in view
+- Better error handling and possibly filtering out stories that do not include images/headlines (currently only have a placeholder image in the event it is missing)
+
+
+
+
 # Axios Mobile Excerise
 Axios has a lot of award-winning journalism, and sometimes it doesn't all fit on one page, so we have to help readers easily find and read the stories they want. Your challenge is to build a mobile listicle view that displays various stories and navigates to the full view of the story.
 

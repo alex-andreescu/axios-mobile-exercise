@@ -23,17 +23,13 @@ const App: React.FC = () => {
             headerTitle: '',
             headerRight: () => (
               <TouchableOpacity
-                onPress={async () => {
+                onPress={() => {
                   const url: string = 'https://axios.com'
-                  // check just in case the url cannot be opened
-                  const canOpen = await Linking.canOpenURL(url)
-
-                  if (!canOpen) return alert('Cannot open Axios at this time. Try again later.')
 
                   return Linking.openURL(url)
                 }}
               >
-                <Text>Visit Axios.com</Text>
+                <Text style={{ color: 'blue' }}>Visit Axios.com</Text>
               </TouchableOpacity>
             ),
           }}
